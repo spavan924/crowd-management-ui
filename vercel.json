@@ -2,13 +2,13 @@
   "version": 2,
   "functions": {
     "api/server.ts": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs20.x"
     }
   },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/server"
+      "dest": "/api/server.ts"
     }
   ]
 }

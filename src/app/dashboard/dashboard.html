@@ -1,0 +1,54 @@
+<div class="dashboard">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="brand">Kloudspot</div>
+
+      <nav>
+        <a routerLink="/dashboard" routerLinkActive="active">Overview</a>
+        <a routerLink="/entries" routerLinkActive="active">Crowd Entries</a>
+      </nav>
+    </div>
+
+    <div class="sidebar-bottom">
+      <button class="logout-btn" (click)="logout()">⏻ Logout</button>
+    </div>
+  </aside>
+
+  <!-- MAIN AREA -->
+  <main class="content">
+
+    <div class="topbar">
+    <!-- LEFT -->
+    <div class="topbar-left">
+      <span class="title">Crowd IQ</span>
+      <span class="divider"></span>
+
+      <button class="location-btn">
+        📍 Avenue Mall
+        <span class="caret">▼</span>
+      </button>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="topbar-right">
+      <span class="pill">En</span>
+
+      <button class="icon-btn notification">
+        🔔
+        <span class="notify-dot"></span>
+      </button>
+
+      <img
+        class="avatar"
+        src="https://i.pravatar.cc/40?img=12"
+        alt="User"
+      />
+    </div>
+  </div>
+
+
+    <!-- 🔥 ONLY CHILD CONTENT HERE -->
+    <router-outlet></router-outlet>
+  </main>
+</div>

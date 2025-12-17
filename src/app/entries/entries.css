@@ -1,0 +1,77 @@
+.page-header {
+  display: flex;                 /* 👈 KEY FIX */
+  align-items: center;           /* vertical center */
+  justify-content: space-between;/* title left, button right */
+  margin-bottom: 24px;
+}
+
+.entries-table {
+  width: 100%;
+  table-layout: fixed;   /* 🔥 VERY IMPORTANT */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Column widths */
+.col-name   { width: 35%; }
+.col-sex    { width: 15%; }
+.col-entry  { width: 15%; }
+.col-exit   { width: 15%; }
+.col-dwell  { width: 20%; }
+
+.entries-table thead tr {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+}
+
+.entries-table thead th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.entries-table thead {
+  position: relative;
+}
+
+.entries-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #FFFFFF;
+}
+
+.name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: transparent;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.pagination button.active {
+  border-bottom: 2px solid #0f766e;
+  font-weight: 600;
+}
+

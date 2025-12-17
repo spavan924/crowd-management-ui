@@ -1,0 +1,115 @@
+.page-header {
+  display: flex;                 /* 👈 KEY FIX */
+  align-items: center;           /* vertical center */
+  justify-content: space-between;/* title left, button right */
+  margin-bottom: 24px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 3 cards, 1 row */
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.kpi-card {
+  background: transparent; /* 👈 transparent like demographics */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* 👈 white border */
+  border-radius: 18px;
+  padding: 16px 24px 24px;
+  backdrop-filter: blur(10px); /* optional glass effect */
+}
+
+.kpi-title {
+  margin-top: 0;          /* 👈 remove default top gap */
+  margin-bottom: 12px;   /* keep breathing space below */
+  color: #cbd5f5;
+  font-size: 14px;
+}
+
+.card {
+  background: transparent; /* 👈 transparent */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* 👈 soft white border */
+  border-radius: 18px;
+  padding: 24px;
+  margin-top: 24px;
+
+  backdrop-filter: blur(10px); /* optional glass effect */
+}
+
+/* Demographics Section Card */
+.demographics-section {
+  margin-top: 32px;
+}
+
+/* Section title inside card */
+.demographics-section .section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.demographics-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/* Inner cards */
+.sub-card {
+  background: transparent;               /* 👈 transparent */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* 👈 soft white border */
+  border-radius: 14px;
+  padding: 20px;
+
+  backdrop-filter: blur(8px);             /* 👈 glass effect (optional but nice) */
+}
+
+/* Inner headings */
+.sub-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.chart-container {
+  height: 320px;        /* 🔥 REQUIRED */
+  width: 100%;
+  margin-top: 12px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.demographics-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.sub-card {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* Containers MUST have height */
+.donut-container {
+  height: 220px;
+  margin: 10px 0;
+}
+
+.chart-container-demographics {
+  height: 260px;
+}
+
+.legend-list p {
+  font-size: 13px;
+  color: #cbd5f5;
+  margin: 6px 0;
+}

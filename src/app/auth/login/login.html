@@ -1,0 +1,73 @@
+<div class="login-wrapper">
+
+  <!-- Left branding panel -->
+  <div class="login-left">
+    <div class="overlay"></div>
+
+    <div class="brand-content">
+      <h1>Crowd Intelligence Platform</h1>
+      <p>
+        Real-time occupancy • Visitor behavior • Smart decisions
+      </p>
+
+      <div class="stats">
+        <div>
+          <strong>98%</strong>
+          <span>Accuracy</span>
+        </div>
+        <div>
+          <strong>24×7</strong>
+          <span>Live Monitoring</span>
+        </div>
+        <div>
+          <strong>100+</strong>
+          <span>Enterprise Sites</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right login panel -->
+  <div class="login-right">
+    <div class="login-card">
+      <h2>Kloudspot</h2>
+      <p class="subtext">Login to manage crowd analytics</p>
+
+      <form (ngSubmit)="login()">
+        <div class="input-group">
+          <label>Email</label>
+          <input
+            type="email"
+            [(ngModel)]="email"
+            name="email"
+            placeholder="you@company.com"
+            required
+          />
+        </div>
+
+        <div class="input-group row">
+          <label>Password</label>
+
+          <div class="password-wrapper">
+            <input
+              [type]="showPassword ? 'text' : 'password'"
+              [(ngModel)]="password"
+              name="password"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+        </div>
+
+        <button type="submit">Secure Login</button>
+
+        <p class="error" *ngIf="error">{{ error }}</p>
+
+        <div class="security">
+          🔒 Enterprise-grade security enabled
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

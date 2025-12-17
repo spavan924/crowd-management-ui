@@ -1,0 +1,56 @@
+<section class="entries">
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h2>Overview</h2>
+    <button class="date-btn">
+      📅 Today
+    </button>
+  </div>
+  
+  <div class="card">
+
+    <h3>Crowd Entries</h3>
+
+    <table class="entries-table">
+      <thead>
+        <tr>
+          <th class="col-name">Name</th>
+          <th class="col-sex">Sex</th>
+          <th class="col-entry">Entry</th>
+          <th class="col-exit">Exit</th>
+          <th class="col-dwell">Dwell Time</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let e of paginatedEntries">
+          <td class="name-cell">
+            <img
+              class="avatar"
+              [src]="getAvatar(e)"
+              alt="Avatar"
+            />
+            {{ e.name }}
+          </td>
+          <td>{{ e.gender }}</td>
+          <td>{{ e.entry }}</td>
+          <td>{{ e.exit }}</td>
+          <td>{{ e.dwell }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button
+        *ngFor="let p of [].constructor(totalPages); let i = index"
+        (click)="goToPage(i + 1)"
+        [class.active]="currentPage === i + 1">
+        {{ i + 1 }}
+      </button>
+    </div>
+
+  </div>
+
+</section>

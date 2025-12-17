@@ -1,0 +1,78 @@
+<section class="overview">
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h2>Overview</h2>
+    <button class="date-btn">
+      📅 Today
+    </button>
+  </div>
+
+  <!-- KPI SECTION -->
+  <h3 class="section-title">Occupancy</h3>
+
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <p class="kpi-title">Live Occupancy</p>
+      <h1 class="kpi-value">734</h1>
+      <span class="kpi-positive">↗ 10% More than yesterday</span>
+    </div>
+
+    <div class="kpi-card">
+      <p class="kpi-title">Today’s Footfall</p>
+      <h1 class="kpi-value">2,436</h1>
+      <span class="kpi-negative">↘ 10% Less than yesterday</span>
+    </div>
+
+    <div class="kpi-card">
+      <p class="kpi-title">Avg Dwell Time</p>
+      <h1 class="kpi-value">08m 30s</h1>
+      <span class="kpi-positive">↗ 6% More than yesterday</span>
+    </div>
+  </div>
+
+  <!-- OVERALL OCCUPANCY -->
+  <h3>Overall Occupancy</h3>
+  <div class="card">
+    <div class="card-header">
+      <span class="legend">● Occupancy</span>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="occupancyChart"></canvas>
+    </div>
+  </div>
+
+  <h3 class="section-title">Demographics</h3>
+  
+
+  <!-- GRID -->
+  <div class="demographics-grid">
+
+    <!-- Donut Chart -->
+    <div class="sub-card">
+      <h4>Chart of Demographics</h4>
+
+      <div class="donut-container">
+        <canvas id="demographicsDonut"></canvas>
+      </div>
+
+      <div class="legend-list">
+        <p>👤 55% Males</p>
+        <p>👤 45% Females</p>
+      </div>
+    </div>
+
+    <!-- Line Chart -->
+    <div class="sub-card">
+      <h4>Demographics Analysis</h4>
+
+      <div class="chart-container-demographics">
+        <canvas id="demographicsLine"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>

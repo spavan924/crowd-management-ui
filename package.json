@@ -3,11 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:crowd-management-ui": "node dist/crowd-management-ui/server/server.mjs"
+    "start": "node dist/crowd-management-ui/server/server.mjs",
+    "test": "ng test"
   },
   "prettier": {
     "printWidth": 100,

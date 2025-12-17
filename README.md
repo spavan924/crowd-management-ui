@@ -1,64 +1,34 @@
-<<<<<<< HEAD
-# CrowdManagementUi
+# Kloudspot – Crowd Management Dashboard (UI Engineer Assignment)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
+A modern, responsive crowd analytics dashboard built as part of the Kloudspot UI Engineer assignment.
 
-## Development server
+## 🚀 Features
+- Secure Login with password visibility toggle
+- Dashboard with:
+  - Live Occupancy KPIs
+  - Footfall & Avg Dwell Time
+  - Occupancy Line Chart (Chart.js)
+  - Demographics (Donut & Trend charts)
+- Crowd Entries table
+  - Pagination
+  - Gender-based avatars
+- Reusable sidebar & topbar layout
+- Modern dark UI inspired by Kloudspot design system
 
-To start a local development server, run:
+## 🛠 Tech Stack
+- Angular (Standalone Components)
+- TypeScript
+- Chart.js
+- HTML5 / CSS3
+- Responsive Flex & Grid layouts
 
+## 📦 Installation & Run Instructions
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- Angular CLI
+
+### Steps
 ```bash
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# kloudspot-crowd-management-ui
-A modern Angular-based crowd analytics dashboard built for the Kloudspot UI Engineer assignment. Features include secure login, real-time KPI cards, interactive occupancy and demographic charts, paginated crowd entries, and a reusable sidebar layout with a clean, enterprise-grade dark theme UI.
->>>>>>> 632154b2bba5e500d63fcaeb592bf62bc28cfbf9

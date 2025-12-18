@@ -28,7 +28,13 @@ A modern, responsive crowd analytics dashboard built as part of the Kloudspot UI
 - Node.js (v18+ recommended)
 - Angular CLI
 
-### Steps
+### Steps to run locally
 ```bash
 npm install
 ng serve
+
+### Steps to run with SSR (Production-like)
+```bash
+npm insall
+npm run build
+npm start

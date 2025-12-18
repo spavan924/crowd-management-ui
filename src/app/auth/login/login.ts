@@ -19,12 +19,6 @@ export class Login {
 
   showPassword = false;
 
-  // 👇 Multiple users stored locally
-  private users = [
-    { email: 'spavan924@gmail.com', password: '1234567890' },
-    { email: 'test@test.com', password: '1234567890' }
-  ];
-
   constructor(private auth: AuthService, private router: Router) {}
 
   togglePassword() {
@@ -34,18 +28,13 @@ export class Login {
   login() {
     this.error = '';
 
-    const validUser = this.users.find(
-      u => u.email === this.email && u.password === this.password
-    );
-
-    if (validUser) {
-      // Store login flag (used by auth guard)
-      localStorage.setItem('isLoggedIn', 'true');
-      localStorage.setItem('userEmail', validUser.email);
-
-      this.router.navigate(['/dashboard']);
-    } else {
-      this.error = 'Invalid email or password';
-    }
+    this.auth.login(this.email, this.password).subscribe({
+      next: () => {
+        this.router.navigate(['/dashboard']);
+      },
+      error: () => {
+        this.error = 'Invalid email or password';
+      }
+    });
   }
 }

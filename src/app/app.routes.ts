@@ -3,7 +3,7 @@ import { Login } from './auth/login/login';
 import { Dashboard } from './dashboard/dashboard';
 import { overview } from './dashboard/overview/overview';
 import { Entries } from './entries/entries';
-import { authGuard } from './guards/auth-guard';
+import { AuthGuard } from './guards/auth-guard';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -13,7 +13,7 @@ export const routes: Routes = [
   {
     path: '',
     component: Dashboard,     // Layout
-    canActivate: [authGuard],
+    canActivate: [AuthGuard],
     children: [
       { path: 'dashboard', component: overview },
       { path: 'entries', component: Entries }
